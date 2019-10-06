@@ -1,3 +1,5 @@
-// compose, allPass, zipObj, zip, toLower, sum, splitEvery, range, pipe, pick, pathEq, none, length, isEmpty, is, groupBy, find, either, Dictionary,
+// zip, splitEvery, groupBy
 
 export { default as prop } from "./prop"
+export { default as propEq } from "./propEq"
+export { default as compose } from "./compose"
