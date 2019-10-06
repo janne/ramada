@@ -25,3 +25,14 @@ it("composes functions that takes and returns different types", () => {
   )
   expect(composedFunction(42)).toEqual("fn1(fn2(fn3(42))),foo")
 })
+
+it("calculates math expressions", () => {
+  const add = (a: number) => (b: number) => a + b
+  const mul = (a: number) => (b: number) => a * b
+  expect(
+    compose(
+      mul(3),
+      add(4)
+    )(2)
+  ).toEqual(18)
+})
